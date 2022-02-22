@@ -1,5 +1,7 @@
 # Open Swoole GRPC code generator plugin
 
+[![.github/workflows/release.yaml](https://github.com/openswoole/protoc-gen-openswoole-grpc/actions/workflows/release.yaml/badge.svg)](https://github.com/openswoole/protoc-gen-openswoole-grpc/actions/workflows/release.yaml)
+
 ## Prerequisites
 
 * PHP, Composer
