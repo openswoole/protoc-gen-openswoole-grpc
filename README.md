@@ -9,12 +9,17 @@
 * protoc <https://github.com/protocolbuffers/protobuf>
 * Open Swoole <https://openswoole.com> GRPC
 
+## Install openswoole-grpc code generator plugin
+
+Download package from [releases page](https://github.com/openswoole/protoc-gen-openswoole-grpc/releases).
+
 ```bash
-
-# install openswoole-grpc code generator plugin
-
 cp ./protoc-gen-openswoole-grpc /usr/local/bin/
+```
 
+## Generate code from proto file
+
+```bash
 protoc --php_out=./src --openswoole-grpc_out=./src helloworld.proto
 
 # or
