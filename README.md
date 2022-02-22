@@ -1,5 +1,12 @@
 # Open Swoole GRPC code generator plugin
 
+## Prerequisites
+
+* PHP, Composer
+* Package google/protobuf 
+* protoc <https://github.com/protocolbuffers/protobuf>
+* Open Swoole <https://openswoole.com> GRPC
+
 ```bash
 
 # install openswoole-grpc code generator plugin
