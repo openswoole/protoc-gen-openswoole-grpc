@@ -27,3 +27,9 @@ protoc --php_out=./src \
        --plugin=protoc-gen-grpc=protoc-gen-openswoole-grpc \
        helloworld.proto
 ```
+
+## Use openswoole/protoc Docker image to generate codes
+
+```bash
+docker run -v $APP_DIR:/app openswoole/protoc
+```
