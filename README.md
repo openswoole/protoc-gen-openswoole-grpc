@@ -24,6 +24,6 @@ protoc --php_out=./src --openswoole-grpc_out=./src helloworld.proto
 
 # or
 
-protoc --php_out=./src --openswoole-grpc_out=./src --plugin=protoc-gen-openswoole-grpc=protoc-gen-openswoole-grpc helloworld.proto
+protoc --php_out=./src --openswoole-grpc_out=./src --plugin=protoc-gen-grpc=protoc-gen-openswoole-grpc helloworld.proto
 ```
 
