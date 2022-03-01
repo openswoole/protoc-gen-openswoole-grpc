@@ -36,4 +36,4 @@ docker run -v $APP_DIR:/app openswoole/protoc
 
 ## License
 
-OpenSwoole GRPC code generator is open-sourced software licensed under the [Apache 2.0 license](http://www.apache.org/licenses/LICENSE-2.0.html).
+OpenSwoole GRPC code generator is open-sourced software licensed under the [Apache 2.0 license](https://github.com/openswoole/protoc-gen-openswoole-grpc/blob/main/LICENSE).
