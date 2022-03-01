@@ -19,7 +19,11 @@ cp ./protoc-gen-openswoole-grpc /usr/local/bin/
 ## Generate PHP stub codes from GRPC proto files
 
 ```bash
-protoc --php_out=./src --openswoole-grpc_out=./src helloworld.proto
+protoc --php_out=./src \
+       --openswoole-grpc_out=./src helloworld.proto
 # or
-protoc --php_out=./src --openswoole-grpc_out=./src --plugin=protoc-gen-grpc=protoc-gen-openswoole-grpc helloworld.proto
+protoc --php_out=./src \
+       --openswoole-grpc_out=./src \
+       --plugin=protoc-gen-grpc=protoc-gen-openswoole-grpc \
+       helloworld.proto
 ```
