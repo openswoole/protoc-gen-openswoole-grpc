@@ -5,9 +5,8 @@
 ## Prerequisites
 
 * PHP, Composer
-* Package google/protobuf 
+* Open Swoole GRPC
 * protoc <https://github.com/protocolbuffers/protobuf>
-* Open Swoole <https://openswoole.com> GRPC
 
 ## Install openswoole-grpc code generator plugin
 
@@ -17,13 +16,10 @@ Download package from [releases page](https://github.com/openswoole/protoc-gen-o
 cp ./protoc-gen-openswoole-grpc /usr/local/bin/
 ```
 
-## Generate code from proto file
+## Generate PHP stub codes from GRPC proto files
 
 ```bash
 protoc --php_out=./src --openswoole-grpc_out=./src helloworld.proto
-
 # or
-
 protoc --php_out=./src --openswoole-grpc_out=./src --plugin=protoc-gen-grpc=protoc-gen-openswoole-grpc helloworld.proto
 ```
-
