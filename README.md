@@ -1,4 +1,4 @@
-# Open Swoole GRPC PHP code generator
+# Open Swoole GRPC Compiler
 
 [![.github/workflows/release.yaml](https://github.com/openswoole/protoc-gen-openswoole-grpc/actions/workflows/release.yaml/badge.svg)](https://github.com/openswoole/protoc-gen-openswoole-grpc/actions/workflows/release.yaml)
 
