@@ -2,10 +2,7 @@
 
 [![.github/workflows/release.yaml](https://github.com/openswoole/protoc-gen-openswoole-grpc/actions/workflows/release.yaml/badge.svg)](https://github.com/openswoole/protoc-gen-openswoole-grpc/actions/workflows/release.yaml)
 
-## Prerequisites
-
-* PHP and Composer
-* Open Swoole GRPC
+Stub code generation and GRPC `.proto` compiler for [OpenSwoole GRPC](https://github.com/openswoole/grpc). You can use the `openswoole/protoc` docker images to compile and generate PHP codes or install the GRPC protoc plugin at your local environment.
 
 ## Install openswoole-grpc code generator plugin
 
