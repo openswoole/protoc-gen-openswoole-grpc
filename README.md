@@ -6,7 +6,6 @@
 
 * PHP and Composer
 * Open Swoole GRPC
-* Protocol Buffers Compiler <https://github.com/protocolbuffers/protobuf>
 
 ## Install openswoole-grpc code generator plugin
 
