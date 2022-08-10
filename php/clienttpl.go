@@ -47,6 +47,7 @@ use {{ $n }};
 
 {{ $package := .File.Package -}}
 {{ $svc := .Service.Name -}}
+{{ $once := 0 -}}
 
 class {{ .Service.Name | client }} extends \OpenSwoole\GRPC\BaseStub
 {
@@ -65,11 +66,12 @@ class {{ .Service.Name | client }} extends \OpenSwoole\GRPC\BaseStub
         ['\{{ $ns.Namespace }}\{{ name $ns $m.OutputType }}', 'decode'],
         $metadata); 
     }
-
-    public function getNext(): HelloReply
-    {
-        return $this->_getData();
-    }
+{{if eq $once 0}}
+	public function getNext(): object {
+	    return $this->_getData();
+	}
+{{end -}}
+{{ $once = 1}}
 {{- else}}
     /**
     * @param {{ name $ns $m.InputType }} $request
